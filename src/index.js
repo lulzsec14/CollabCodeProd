@@ -8,7 +8,7 @@ var express_1 = __importDefault(require("express"));
 var cors_1 = __importDefault(require("cors"));
 var http_1 = __importDefault(require("http"));
 var path_1 = __importDefault(require("path"));
-var PORT = 8080;
+var PORT = process.env.PORT || 8080;
 var app = (0, express_1.default)();
 app.set('port', PORT);
 var server = http_1.default.createServer(app);
